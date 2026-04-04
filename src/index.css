@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #102213;
+    color: #ffffff;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  :root {
+    --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+@layer utilities {
+  .safe-area-pb {
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #13EC37, #0ab82c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .glow {
+    box-shadow: 0 0 20px rgba(19, 236, 55, 0.3);
+  }
+  .glow-sm {
+    box-shadow: 0 0 10px rgba(19, 236, 55, 0.2);
+  }
+  .card {
+    background: #1C2E1F;
+    border: 1px solid #2A402D;
+    border-radius: 1rem;
+  }
+}
