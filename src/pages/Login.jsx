@@ -171,7 +171,7 @@ export default function Login() {
 
           <div className="mt-5 pt-5 border-t border-farm-border">
             <a
-              href="/admin/index.html"
+              href={`${import.meta.env.BASE_URL}admin/index.html`}
               className="flex items-center justify-center gap-2 w-full bg-farm-surface2 border border-farm-border text-farm-muted hover:text-white hover:border-farm-primary/40 rounded-xl py-3 text-sm transition-all duration-200"
             >
               <ShieldCheck className="w-4 h-4" />
